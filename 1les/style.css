@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(194, 195, 193);
+}
+
+[class*="col"] {
+    background: rgb(69, 100, 82);
+    border: 1px white solid;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+

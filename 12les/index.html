@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Components | B5</title>
+  </head>
+  <body>
+    <div class="container">
+      <h5 class="display-5">BreadCrumb</h5>
+      <hr />
+    </div>
+    <div class="container mt-5">
+      <nav arial-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
+      <nav
+        style="
+          --bs-breadcrumb-divider: url(
+            &#34;data:image/svg + xml,
+            %3Csvgxmlns='http://www.w3.org/2000/svg'width='8'height='8'%3E%3Cpathd='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z'fill='%236c757d'/%3E%3C/svg%3E&#34;
+          );
+        "
+        aria-label="breadcrumb"
+      >
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Library</li>
+        </ol>
+      </nav>
+    </div>
+    <br />
+    <div class="container">
+      <h5 class="display-5">Button</h5>
+      <hr />
+    </div>
+    <div class="container mt-3">
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-primary">Click Me</button>
+        <button class="btn btn-primary shadow-lg">Click Me</button>
+      </div>
+      <br />
+      <p class="lead">Toggled Buttons 👍</p>
+      <p>
+        Add <code>data-bs-toggle="button"</code> to toggle a button’s active
+        state. If you’re pre-toggling a button, you must manually add the
+        <code>.active</code> class and <code>aria-pressed="true"</code> to
+        ensure that it is conveyed appropriately to assistive technologies.
+      </p>
+      <div class="mt-5">
+        <p class="d-inline-flex gap-1">
+          <button type="button" class="btn" data-bs-toggle="button">
+            Toggle button
+          </button>
+          <button
+            type="button"
+            class="btn active"
+            data-bs-toggle="button"
+            aria-pressed="true"
+          >
+            Active toggle button
+          </button>
+          <button type="button" class="btn" disabled data-bs-toggle="button">
+            Disabled toggle button
+          </button>
+        </p>
+        <p class="d-inline-flex gap-1">
+          <button type="button" class="btn btn-primary" data-bs-toggle="button">
+            Toggle button
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary active"
+            data-bs-toggle="button"
+            aria-pressed="true"
+          >
+            Active toggle button
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary"
+            disabled
+            data-bs-toggle="button"
+          >
+            Disabled toggle button
+          </button>
+        </p>
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="button"
+          aria-pressed="true"
+        >
+          Custom
+        </button>
+      </div>
+    </div>
+    <div class="container mx-auto col-3 d-grid gap-2">
+      <div
+        class="btn-group"
+        role="group"
+        aria-label="Basic checkbox toggle button group"
+      >
+        <input
+          type="checkbox"
+          class="btn-check"
+          id="btncheck1"
+          autocomplete="off"
+        />
+        <label class="btn btn-outline-primary" for="btncheck1">English</label>
+
+        <input
+          type="checkbox"
+          class="btn-check"
+          id="btncheck2"
+          autocomplete="off"
+        />
+        <label class="btn btn-outline-primary" for="btncheck2">Turkish</label>
+
+        <input
+          type="checkbox"
+          class="btn-check"
+          id="btncheck3"
+          autocomplete="off"
+        />
+        <label class="btn btn-outline-primary" for="btncheck3">Uzbek</label>
+      </div>
+      <br />
+      <div
+        class="btn-group"
+        role="group"
+        aria-label="Basic radio toggle button group"
+      >
+        <input
+          type="radio"
+          class="btn-check"
+          name="btnradio"
+          id="btnradio1"
+          autocomplete="off"
+          checked
+        />
+        <label class="btn btn-outline-primary" for="btnradio1">A1</label>
+
+        <input
+          type="radio"
+          class="btn-check"
+          name="btnradio"
+          id="btnradio2"
+          autocomplete="off"
+        />
+        <label class="btn btn-outline-primary" for="btnradio2">B1</label>
+
+        <input
+          type="radio"
+          class="btn-check"
+          name="btnradio"
+          id="btnradio3"
+          autocomplete="off"
+        />
+        <label class="btn btn-outline-primary" for="btnradio3">C1</label>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="text-center">
+        <h2 class="display-6">Hello hammaga</h2>
+        <p class="lead">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque,
+          officiis.
+        </p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" placeholder="Email" />
+            <label class="form-label">my@email.com</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" placeholder="Your name" />
+            <label class="form-label"> Name </label>
+          </div>
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Your last name"
+            />
+            <label class="form-label"> Last Name </label>
+          </div>
+          <div class="form-floating mb-5">
+            <textarea name="text" class="form-control" style="height: 150px;"></textarea>
+            <label class="form-label">Write something about yourself</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

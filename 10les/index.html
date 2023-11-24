@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Accordion</title>
+  </head>
+  <body>
+    <div class="container">
+      <h5 class="display-5">Accordion</h5>
+      <hr />
+    </div>
+    <div class="container mt-5">
+      <div class="accordion" id="accEx">
+        <div class="accordion-item">
+          <h1 class="accordion-header fs-4">
+            <button
+              type="button"
+              class="accordion-button"
+              data-bs-toggle="collapse"
+              data-bs-target="#accorOne"
+              aria-expanded="true"
+              aria-controls="accorOne"
+            >
+              HTML
+            </button>
+          </h1>
+          <div class="accordion-collapse collapse show" id="accorOne">
+            <div class="accordion-body">
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                voluptate tempore temporibus rerum aliquam porro necessitatibus
+                molestias quisquam! Tempora, quam?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h1 class="accordion-header">
+            <button
+              type="button"
+              class="accordion-button collapsed"
+              data-bs-toggle="collapse"
+              data-bs-target="#accorTwo"
+              aria-expanded="false"
+              aria-controls="accorTwo"
+            >
+              CSS
+            </button>
+          </h1>
+          <div class="accordion-collapse collapse" id="accorTwo">
+            <div class="accordion-body">
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                voluptate tempore temporibus rerum aliquam porro necessitatibus
+                molestias quisquam! Tempora, quam?Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit. Commodi rerum molestiae quod
+                beatae distinctio ipsum?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h1 class="accordion-header">
+            <button
+              type="button"
+              class="accordion-button collapsed"
+              data-bs-toggle="collapse"
+              data-bs-target="#accorThree"
+              aria-expanded="false"
+              aria-controls="accorThree"
+            >
+              JS
+            </button>
+          </h1>
+          <div class="accordion-collapse collapse" id="accorThree">
+            <div class="accordion-body">
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                voluptate tempore temporibus rerum aliquam porro necessitatibus
+                molestias quisquam! Tempora, quam?Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit. Commodi rerum molestiae quod
+                beatae distinctio ipsum?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
